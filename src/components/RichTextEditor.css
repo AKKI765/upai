@@ -1,0 +1,128 @@
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+
+.editor-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+.editor-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
+.button-container button {
+  background: #1fa2ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.button-container button:hover {
+  background: #0d8bf2;
+  transform: translateY(-2px);
+}
+
+
+.editor-area {
+  min-height: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: text;
+  font-size: 1rem;
+  text-align: left;
+  background: #f9f9f9;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.editor-area::before {
+  content: "Start typing here...";
+  color: #888;
+  font-size: 1rem;
+  display: block;
+}
+
+
+.inline-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.back-button {
+  background: #ff6b6b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: #e64a4a;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 480px) {
+  .editor-wrapper {
+    padding: 20px;
+  }
+  .editor-title {
+    font-size: 1.3rem;
+  }
+  .button-container,
+  .inline-buttons {
+    flex-direction: row; 
+    flex-wrap: wrap;
+  }
+  .button-container button,
+  .back-button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}

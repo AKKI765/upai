@@ -1,0 +1,157 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #11447e, #222223);
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #11447e, #222223);
+  color: #fff;
+  justify-content: center;  
+  align-items: center; 
+  padding: 0 20px;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 20px;
+}
+
+
+.welcome {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+
+.auth-btn {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 500px;  
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+
+.home-button {
+  width: 100%; 
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+}
+
+
+.home-button.secondary {
+  background: linear-gradient(45deg, #FF416C, #FF4B2B);
+}
+
+.home-button.info {
+  background: linear-gradient(45deg, #36D1DC, #5B86E5);
+}
+
+
+.home-button.success {
+  background: linear-gradient(45deg, #50ff1f, #12fa6b);
+  color: #fff;
+}
+
+
+.home-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+.sign-in-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .sign-in-message, .welcome {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  
+  .home-button {
+    width: 80%;  
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  
+  .nav-buttons .home-button {
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
